@@ -1,5 +1,7 @@
 package top.valley.initialproject.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import top.valley.initialproject.bean.User;
 
 /**
@@ -8,7 +10,8 @@ import top.valley.initialproject.bean.User;
 * @createDate 2023-07-22 20:31:29
 * @Entity top.valley.initialproject.bean.User
 */
-public interface UserMapper {
+@Mapper
+public interface UserMapper extends BaseMapper<User> {
 
 }
 
